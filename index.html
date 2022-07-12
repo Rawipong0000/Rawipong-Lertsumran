@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="w-auto p-5" style="background-color:rgb(206, 47, 47);">
+        <h1 align=center style="color:white ;">
+            <span class="d-inline p-2 bg-dark" style="color:rgb(230, 238, 11) ;">W</span>
+            ector
+        </h1>
+    </div>
+
+    <span class="border border-success">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">ค่าที่ต้องการหา</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="1">ความเร็วปลาย(v)</option>
+                                <option value="2">ความเร็วต้น(u)</option>
+                                <option value="3">ระยะทาง(s)</option>
+                                <option value="4">ความเร่ง(a)</option>
+                                <option value="5">เวลา(t)</option>
+                            </select>
+                        </div>
+                    </th>
+                    <th scope="col">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">ค่าที่หายไป</label>
+                            <select class="form-select" id="inputGroupSelect02">
+                                <option selected>Choose...</option>
+                                <option value="1">ความเร็วปลาย(v)</option>
+                                <option value="2">ความเร็วต้น(u)</option>
+                                <option value="3">ระยะทาง(s)</option>
+                                <option value="4">ความเร่ง(a)</option>
+                                <option value="5">เวลา(t)</option>
+                            </select>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </span>
+
+    <span class="border border-success">
+        <div class="d-grid gap-2 col-3 mx-auto">
+            <button
+                onclick="data_type(document.getElementById('inputGroupSelect01').value,document.getElementById('inputGroupSelect02').value)"
+                type="button" class="btn btn-success btn-lg shadow-sm">Next</button>
+        </div>
+    </span>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody id="insert_data"></tbody>
+    </table>
+
+    <div class="w-auto p-3" style="background-color:rgb(206, 47, 47);">
+        <h3 align=right style="color:white ;">
+            By Rawipong
+        </h3>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</html>
